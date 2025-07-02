@@ -1,12 +1,14 @@
 <script setup lang="ts">
 const isVisible = ! (new URLSearchParams(window.location.search).has('isPDF'))
+
+const pdfUrl = `${import.meta.env.BASE_URL}dist/assets/vadim-cherepenichev.pdf`
 </script>
 
 <template>
   <a
     v-if="isVisible"
     class="download-as-pdf"
-    href="/dist/assets//vadim-cherepenichev.pdf"
+    :href="pdfUrl"
     target="_blank"
   >
     Download as PDF
