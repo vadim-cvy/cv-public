@@ -2,7 +2,7 @@
   <div class="hero">
     <div class="hero__text">
       <span>
-        <b>Hello!</b> My name is
+        <b>Hi there!</b> My name is
       </span>
 
       <h1 class="hero__text__name">
