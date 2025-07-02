@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import BaseSection from './../BaseSection.vue';
 import Client from './Client.vue';
-import topTalLogoImg from '@/assets/img/clients/toptal.avif';
-import trustPaymentsLogoImg from '@/assets/img/clients/trust-payments.png';
-import joslexLogoImg from '@/assets/img/clients/joslex.png';
-import vetNetworkLogoImg from '@/assets/img/clients/vet-network.png';
+import topTalLogoImg from '@/assets/img/clients/toptal.jpg';
+import trustPaymentsLogoImg from '@/assets/img/clients/trust-payments.jpg';
+import joslexLogoImg from '@/assets/img/clients/joslex.jpg';
+import vetNetworkLogoImg from '@/assets/img/clients/vet-network.jpg';
 </script>
 
 <template>
