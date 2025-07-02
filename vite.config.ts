@@ -6,6 +6,7 @@ import { generatePDF } from './scripts/generatePDF.js'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/cv-public/',
   plugins: [
     vue(),
     vueDevTools(),
