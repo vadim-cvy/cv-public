@@ -1,0 +1,97 @@
+:root
+{
+  --color-ultra-light: #ffffff;
+  --color-light: #f7f7f7;
+  --color-light-dark: #7e7e7e;
+  --color-dark: #242424;
+  --color-ultra-dark: #141414;
+
+  --box-shadow: 0 0 7px 0 rgba(0, 0, 0, .1);
+}
+
+html
+{
+  font-size: 17px;
+}
+
+body
+{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--color-ultra-dark);
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  margin: 0;
+}
+
+h3
+{
+  font-size: 1.28em;
+}
+
+h4
+{
+  font-size: 1.15em;
+}
+
+h5
+{
+  font-size: 1em;
+  margin-top: 2em;
+  margin-bottom: -0.25em;
+}
+
+p
+{
+  margin: 1em 0;
+}
+
+ul
+{
+  list-style: circle;
+  padding-left: 1em;
+}
+
+ol
+{
+  padding-left: 1.2em;
+}
+
+li
+{
+  margin: .15em 0;
+  padding-left: .15em;
+
+  ul, ol
+  {
+    margin-top: .3em;
+    margin-bottom: .3em;
+  }
+}
+
+li, p
+{
+  &:first-child
+  {
+    margin-top: 0;
+  }
+
+  &:last-child
+  {
+    margin-bottom: 0;
+  }
+}
+
+img
+{
+  object-fit: cover;
+}
+
+#vue-inspector-container,
+#__vue-devtools-container__
+{
+  display: none !important;
+}
