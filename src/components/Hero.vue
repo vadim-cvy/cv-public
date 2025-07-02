@@ -27,6 +27,7 @@
 {
   display: grid;
   grid-template-columns: 1fr max-content;
+  background-color: var(--color-ultra-dark);
 
   @media screen and (max-width: 560px)
   {
@@ -39,7 +40,6 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: var(--color-ultra-dark);
     color: var(--color-ultra-light);
     line-height: 1.85em;
     padding: 20px;
