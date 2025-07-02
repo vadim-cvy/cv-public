@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import BigCardsGridCard from '../BigCardsGridCard.vue';
 
-defineProps({
-  title: String
-})
+defineProps<{
+  title: string
+}>()
 </script>
 
 <template>

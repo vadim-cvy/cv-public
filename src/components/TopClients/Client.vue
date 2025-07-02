@@ -2,7 +2,7 @@
 defineProps<{
   label: string,
   description: string,
-  imgBaseName: string
+  img: string
 }>();
 </script>
 
@@ -10,7 +10,7 @@ defineProps<{
   <div class="top-clients__client card">
     <div class="top-clients__client__img-wrapper">
       <img
-        :src="`/src/assets/img/clients/${imgBaseName}`"
+        :src="img"
         :alt="label"
         class="top-clients__client__img"
       >
@@ -46,7 +46,7 @@ defineProps<{
   {
     grid-template-columns: 1fr;
     padding: $gap;
-    border-radius: 8px;
+    border-radius: var(--border-radius--normal);
     box-shadow: var(--box-shadow);
     text-align: center;
   }
