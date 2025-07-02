@@ -2,19 +2,25 @@ import http from 'http'
 import handler from 'serve-handler'
 import puppeteer from 'puppeteer'
 
-const port = 4173
-const host = 'localhost'
-
-const url = `http://${host}:${port}/?isPDF`
-const outputPdfPath = './dist/assets/vadim-cherepenichev.pdf'
-
-export const generatePDF = async () =>
+export const generatePDF = async ( urlBaseNoTrailingSlash: string ) =>
 {
+  const port = 4173
+  const host = 'localhost'
+
+  const url = `http://${host}:${port}/${urlBaseNoTrailingSlash}/?isPDF`
+  const outputPdfPath = './dist/assets/vadim-cherepenichev.pdf'
+
   console.log(`PDF Generator: Starting server at ${url}...`)
 
-  const server = http.createServer((req, res) =>
-    handler(req, res, { public: 'dist' })
-  )
+  const server = http.createServer((req, res) => {
+    handler(req, res, {
+      public: 'dist',
+      rewrites: [
+        { source: `${urlBaseNoTrailingSlash}`, destination: '/index.html' },
+        { source: `${urlBaseNoTrailingSlash}/assets/:fileName`, destination: '/assets/:fileName' },
+      ]
+    })
+  })
 
   server.on('error', (err) => console.error('PDF Generator: Server error!', err))
 

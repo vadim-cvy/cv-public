@@ -4,16 +4,18 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import { generatePDF } from './scripts/generatePDF.js'
 
+const urlBaseNoTrailingSlash = '/cv-public'
+
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/cv-public/',
+  base: urlBaseNoTrailingSlash + '/',
   plugins: [
     vue(),
     vueDevTools(),
     {
       name: 'generate-pdf',
       apply: 'build',
-      closeBundle: generatePDF
+      closeBundle: () => generatePDF( urlBaseNoTrailingSlash )
     }
   ],
   resolve: {
