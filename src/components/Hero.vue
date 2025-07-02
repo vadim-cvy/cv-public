@@ -18,7 +18,9 @@
       </span>
     </div>
 
-    <img class="hero__img" src="@/assets/img/me.jpg" alt="Me">
+    <div class="hero__img-wrapper">
+      <img class="hero__img" src="@/assets/img/me.jpg" alt="Me">
+    </div>
   </div>
 </template>
 
@@ -62,11 +64,11 @@
     }
   }
 
-  &__img
+  &__img-wrapper
   {
-    width: 50vw;
-    height: 100%;
-    object-fit: cover;
+    position: relative;
+    width: 45vw;
+    padding-top: 50vw;
 
     @media screen and (max-width: 1024px)
     {
@@ -76,7 +78,18 @@
     @media screen and (max-width: 560px)
     {
       width: 100%;
+      padding-top: 120%;
     }
+  }
+
+  &__img
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 </style>
