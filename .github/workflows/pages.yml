@@ -20,6 +20,7 @@ jobs:
           node-version: '22.16.0'
       - run: npm ci
       - run: npm run build
+      - run: ls -lR dist/assets
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
