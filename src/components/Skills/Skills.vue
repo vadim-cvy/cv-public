@@ -4,7 +4,7 @@ import BaseSection from './../BaseSection.vue';
 const skillSections = [
   {
     label: 'Languages & Standards',
-    note: 'TypeScript, ES6',
+    note: 'TypeScript, ES6, PHP / HTML, CSS',
   },
   {
     label: 'Front-End & UI Frameworks',
@@ -14,45 +14,45 @@ const skillSections = [
     label: 'State Management',
     note: 'Vuex, Pinia, Redux',
   },
-  // {
-  //   label: 'Testing & Monitoring',
-  //   note: 'Postman, New Relic, Prometheus, Grafana, Nightwatch.js, Mocha, Chai, Sinon',
-  // },
+  {
+    label: 'Testing & Monitoring',
+    note: 'Postman, Prometheus, Grafana, Nightwatch.js, Mocha, Chai, Sinon',
+  },
   {
     label: 'Build & Code Quality Tools',
     note: 'Composer, Webpack, Gulp, Grunt, ESLint, Prettier',
   },
   {
     label: 'Storages',
-    note: 'IndexedDB, PostgreSQL, MySQL, MariaDB, Elasticsearch',
+    note: 'IndexedDB, PostgreSQL, MySQL, MariaDB, Elasticsearch, MongoDB, Redis, S3',
   },
   {
     label: 'Payment Systems',
     note: 'Stripe, PayPal, Braintree',
   },
   {
-    label: 'API Protocols',
-    note: 'REST, GraphQL, WebSockets, AJAX, Server-Sent Events',
+    label: 'Communication',
+    note: 'REST, GraphQL, gRPC, tRPC, WebSockets, AJAX, SSE',
   },
   {
     label: 'Web Servers & Frameworks',
     note: 'Express, Nest, NGINX',
   },
   {
-    label: 'Delivery & Performance',
-    note: 'Load-balancing & buffering (NGINX), CDN, Redis caching, Webworkers, Lazyload, Critical CSS',
+    label: 'Performance',
+    note: 'CDN, Redis, Webworkers, Lazyload, Critical CSS',
   },
   {
     label: 'CI / CD',
-    note: 'Docker, Capistrano, GitHub Actions',
+    note: 'K8s, Docker, Capistrano, GitHub Actions, Jenkins',
   },
   {
     label: 'CSS Preprocessors',
     note: 'Sass, Less, Stylus',
   },
   {
-    label: 'HTML/CSS Methodologies & Accessibility',
-    note: 'BEM, Pixel-perfect PSD-to-HTML, responsive, accessible, semantic',
+    label: 'HTML/CSS Methodologies',
+    note: 'BEM, Pixel-perfect, Responsive, Semantic',
   },
   {
     label: 'Version Control',
@@ -60,7 +60,7 @@ const skillSections = [
   },
   {
     label: 'Command Line & OS',
-    note: 'CLI, SSH, Linux',
+    note: 'Tools CLI, Remote SSH, Linux Ubuntu',
   },
   {
     label: 'Patterns & Principles',
